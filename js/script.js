@@ -7,7 +7,7 @@ let clicks = 0;
 const heading = document.querySelector("h1");
 const allTiles = [...document.querySelectorAll(".grid-item")];
 const resetHeader = document.getElementById("resetTitle");
-const startTitle = "Demo App - Felix Birkenhauer";
+const startTitle = "Demo App";
 
 // fetches data from an api
 
