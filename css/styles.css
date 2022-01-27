@@ -1,0 +1,98 @@
+/* header text content */
+
+#headerTitle {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* both designs for header and footer */
+
+#captionAbove {
+  border-bottom: 2px solid black;
+  font-family: "Source Sans 3", sans-serif;
+  background-color: orange;
+  text-align: center;
+  padding: 1px 30px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+#captionBelow {
+  font-family: "Source Sans 3", sans-serif;
+  text-align: center;
+  background-color: orange;
+  position: relative;
+  font-size: 25px;
+  padding: 1px 30px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-top: 2px solid black;
+}
+
+/* general image content */
+
+img {
+  border: 2px solid black;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin: 0;
+  box-shadow: 3px 3px 5px 5px #80808080;
+}
+
+img:hover {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+img:active {
+  border-color: orange;
+}
+
+/* grid item / container content for pics and layout*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5px;
+  column-gap: 50px;
+  max-width: 100%;
+}
+
+.grid-item {
+  font-size: 30px;
+  text-align: center;
+}
+
+/* reset button design */
+
+#resetTitle {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+#resetTitle:hover {
+  background-color: rgb(216, 140, 0);
+}
+
+#resetTitle:active {
+  background-color: rgb(190, 125, 3);
+  box-shadow: inset 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* compatibility for phones */
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+}
